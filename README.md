@@ -18,17 +18,8 @@ The performance measures not only include performance based on encryption time &
 MEASUREMENTS:
 
 Key Generation Time: 9.67 μs
-
-| __Animals__ | __Sports__ | __Fruits__ |
-|-------------|------------|------------|
-| Cat         | Soccer     | Apple      |
-| Dog         | Basketball | Orange     |
-
-
-|                 | Time per Byte (μs)| Total Time (μs) |
-|-----------------|-------------------|-----------------|
-|                 |                   |  1 KB  | 1 MB   |
-|                 |                   |--------|--------|  
+|                 | Time per Byte (μs)|  1 KB  |  1 MB	|
+|-----------------|-------------------|--------|--------| 
 | For Encryption: |       0.057       |  59.17 |  3144  |
 | For Decryption: |       0.770       |  79.7  |  3891  |
 
