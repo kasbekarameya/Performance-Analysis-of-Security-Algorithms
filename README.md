@@ -24,14 +24,14 @@ Key Generation Time: 9.67 μs
 | Cat         | Soccer     | Apple      |
 | Dog         | Basketball | Orange     |
 
-/***
+
 |                 | Time per Byte (μs)| Total Time (μs) |
 |-----------------|-------------------|-----------------|
 |                 |                   |  1 KB  | 1 MB   |
-|-----------------|-------------------|-----------------|  
+|                 |                   |-----------------|  
 | For Encryption: |       0.057       |  59.17 |  3144  |
 | For Decryption: |       0.770       |  79.7  |  3891  |
-***/
+
 
 	128 bit AES Encryption & Decryption using CTR Mode [1]:
 
