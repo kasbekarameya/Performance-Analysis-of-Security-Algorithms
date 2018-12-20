@@ -101,19 +101,19 @@ The performance measures not only include performance based on encryption time &
 
 Based on the above observation & using concepts used in various Encryption, Signing & Hashing Algorithms we have arrived on to following observations:
 
-* **How per byte speed changes for different algorithms between small and large files:** 
+## * **How per byte speed changes for different algorithms between small and large files:** 
 Time per byte for an operation can be described as the total unit time required to complete one operation on a byte size of data. Here, as per our measurements, we can observe that time per byte for both 1KB & 1MB file when performing AES encryption algorithm is less compared to the that required by RSA encryption algorithm. This is because AES algorithm uses symmetric encryption which can be almost 3 -5 times faster than asymmetric encryption used in the RSA algorithm. 
 
-* **How encryption and decryption times differ for a given encryption algorithm**
+## * **How encryption and decryption times differ for a given encryption algorithm**
 In the experiments performed using the encryption algorithms such as AES, we have varied various parameters such as modes of operation, etc. From the observations, when we compared the encryption and decryption time for AES encryption using CBC mode & CTR mode, we observed that time required in AES Encryption in CTR mode improves by about 20% compared to AES Encryption in CBC mode.
 
-* **How key generation, encryption, and decryption times differ with the increase in the key size**
+## * **How key generation, encryption, and decryption times differ with the increase in the key size**
 In the encryption algorithms such as RSA, we have calculated measures for two different key lengths i.e. 2048 bit & 3072 bits. Hence, based on the observations, when we increase the key size from 2048 bits to 3072 bits, the time for encryption & decryption of 1KB & 1MB files for RSA algorithm with a 3072-bit key is 25% slower than that using a 2048-bit key. As for the key generation time, we see a 13% decrease in performance for the 3072-bit key.
 
-* **How hashing time differs between the algorithms and with an increase of the output hash**
+## * **How hashing time differs between the algorithms and with an increase of the output hash**
 Hashing algorithms like SHA use various bit keys such as 256 bit & 512 bit in order to generate a hash value or digest of the input data. As per the measurements, when all the three hashing functions i.e. SHA256, SHA512, SHA3-256 are implemented, we observe that SHA-256 requires the same time as SHA-512 when hashing a small file of 1KB, but when trying to hash a large file of 1MB then we see that SHA-512 is about 2% faster than SHA-256. With this, we can infer that SHA-512 is faster with hashing data of larger sizes.  
 
-* **How the performance of symmetric key encryption (AES), hash functions, and public-key encryption (RSA) compare to each other.**
+## * **How the performance of symmetric key encryption (AES), hash functions, and public-key encryption (RSA) compare to each other.**
 When comparing the performance of Symmetric key encryption like AES, hashing functions like SHA256 & Public key encryption like RSA, we have taken into account some of the common parameters between all the three types of algorithms. These parameters are time per byte for various operations and key generation times. 
 Hashing Algorithms are used only to generate a digest value for some amount of data. On the other hand, Encryption algorithms are designed to encrypt them as well as decrypt the data. The major difference observed in the measurements obtained above is that hashing algorithms require the least amount of unit time per byte to perform an operation, compared to the Encryption algorithms.
 In the encryption algorithms used, we have two variations namely Symmetric- Key Encryption such as AES & Public Key Encryption such as RSA. Here, after calculating the time per byte & key generation time, we can infer that Symmetric Key encryption algorithms require less time than Public Key Encryption algorithms. This is because Public Key Encryption uses more complex mathematical operations such as power & modulus on very large keys (2048 bits). Whereas on the other hand, Symmetric Key encryption uses simpler operations such as XOR and Multiplication using smaller keys (128-bits). 
