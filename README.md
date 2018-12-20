@@ -18,6 +18,7 @@ The performance measures not only include performance based on encryption time &
 MEASUREMENTS:
 
 Key Generation Time: 9.67 μs
+
 |                 | Time per Byte (μs)|  1 KB  |  1 MB	|
 |-----------------|-------------------|--------|--------| 
 | For Encryption: |       0.057       |  59.17 |  3144  |
